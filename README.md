@@ -6,7 +6,7 @@
 
 ![](./images/로그인.png)
 
-  - <span style="font-weight: bold; font-size: 1.5rem; color: dodgerblue;">구현 내용</span>
+<span style="font-weight: bold; font-size: 1.5rem; color: dodgerblue;">구현 내용</span>
   - 로그인 페이지
   - 로그인 클릭 시 메인페이지 이동
   - 회원가입 클릭 시 회원가입 모달창 생성
