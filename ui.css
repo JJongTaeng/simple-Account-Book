@@ -12,6 +12,8 @@
 }
 .login-container {
   width: 50vw;
+  min-width: 400px;
+  max-width: 600px;
   height: 50vh;
   min-height: 300px;
   display: flex;
@@ -98,6 +100,7 @@ label[for="password"] {
 .signup-container {
   background-color: white;
   max-width: 500px;
+  min-height: 300px;
   width: 70vw;
   height: 50vh;
   display:flex;
@@ -251,7 +254,7 @@ label[for="signup-password"] {
   font-weight: bold;
   font-size:1.1rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .contents-list {
     flex-direction: row;
     align-items: stretch;
