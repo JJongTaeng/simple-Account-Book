@@ -2,7 +2,7 @@
 
 ## 로그인 페이지
 
-![](./images/로그인.png)
+<img src="./images/로그인.png" width="400px;">
 
 ### 구현내용
   - 로그인 페이지
@@ -15,9 +15,9 @@
 
 ## 메인 페이지
 
-![](./images/반응형1.png)
-![](./images/반응형2.png)
-![](./images/반응형3.png)
+<img src="./images/반응형1.png" width="400px;"><br>
+<img src="./images/반응형2.png" width="400px;"><br>
+<img src="./images/반응형3.png" width="400px;">
 
 ### 구현 내용
   - 메인 페이지
