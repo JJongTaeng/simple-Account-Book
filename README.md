@@ -11,9 +11,9 @@
 #간단 가계부
 - 로그인 페이지
 
-![](./images/로그인.PNG)
+![](./images/로그인.png)
 
-  - <span>**구현내용**</span>
+  - <span>구현내용</span>
   - 로그인 페이지
   - 로그인 클릭 시 메인페이지 이동
   - 회원가입 클릭 시 회원가입 모달창 생성
@@ -23,9 +23,9 @@
   - node.js + mySQL 공부 후 구현 예정
 - 메인 페이지
 
-![](./images/반응형1.PNG)
-![](./images/반응형2.PNG)
-![](./images/반응형3.PNG)
+![](./images/반응형1.png)
+![](./images/반응형2.png)
+![](./images/반응형3.png)
 
   - <span>구현내용</span>
   - 메인 페이지
