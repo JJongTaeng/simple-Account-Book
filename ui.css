@@ -1,0 +1,285 @@
+/* 로그인 페이지 */
+.web-container {
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.login-container {
+  width: 50vw;
+  height: 50vh;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid gold;
+  border-radius: 2rem;
+  background-color: white;
+}
+
+#id {
+  border: 0.5px solid dodgerblue;
+  border-radius: 1rem;
+  height: 2rem;
+  width:70%;
+  margin-bottom:1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+#id:hover {
+  background-color: rgb(206, 224, 241);
+}
+#password {
+  border: 0.5px solid dodgerblue;
+  border-radius: 1rem;
+  height: 2rem;
+  width:70%;
+  margin-bottom:1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+#password:hover {
+  background-color: rgb(206, 224, 241);
+}
+label[for="id"] {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+label[for="password"] {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+.submit {
+  color: black;
+  width: 6rem;
+  height: 2rem;
+  border:0;
+  border-radius: 1rem;
+  background-color: rgb(224, 224, 224);
+  margin-bottom: 0.7rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding-top: 6px;
+}
+.signup {
+  color: black;
+  width: 6rem;
+  height: 2rem;
+  border:0;
+  border-radius: 1rem;
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+}
+
+/* 회원가입 모달창 */
+.modal-container {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container {
+  background-color: white;
+  max-width: 500px;
+  width: 70vw;
+  height: 50vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  border: 2px solid gold;
+}
+#signup-id {
+  height: 2rem;
+  width: 60%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 0.5px solid dodgerblue;
+  transition: 0.5s;
+}
+#signup-id:hover {
+  background-color: rgb(206, 224, 241);
+}
+#signup-password {
+  height: 2rem;
+  width: 60%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 0.5px solid dodgerblue;
+  transition: 0.5s;
+}
+#signup-password:hover {
+  background-color: rgb(206, 224, 241);
+}
+label[for="signup-id"] {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+label[for="signup-password"] {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+.signup-submit {
+  color: black;
+  width: 6rem;
+  height: 2rem;
+  border:0;
+  border-radius: 1rem;
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+}
+.signup-container span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #555;
+}
+.X-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.X-button:hover {
+  color: crimson;
+}
+
+/* 메뉴바 */
+.menu {
+  display:flex;
+}
+.menu-item {
+  background:rgb(255, 255, 235);
+  width:25%;
+  transition: 0.3s;
+}
+.menu-item:nth-child(2) {
+  display:flex;
+  align-items: center;
+}
+.menu-link {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.search-form{
+  margin-left: auto;
+}
+.menu-link {
+  text-decoration: none;
+  color:#333;
+}
+.menu-item:nth-child(1):hover,
+.menu-item:nth-child(3):hover,
+.menu-item:nth-child(4):hover
+{
+  width: 30%;
+  background-color: dodgerblue;
+}
+.menu-link:hover{
+  color:white;
+}
+.search-form{
+  display: flex;
+  height: 40px;
+}
+.search-form input[type='search'] {
+  /* min-width: 0; */
+  flex-grow: 1;
+  margin-right: 10px;
+  border:0.5px solid dodgerblue;
+  border-radius: 0.3em;
+  font-size: 1rem;
+}
+.search-form input[type='submit'] {
+  width: 4em;
+  border: 0;
+  border-radius: 0.3em;
+  font-size: 1rem;
+  background: gold;
+}
+/* 가운데 콘텐츠 */
+.contents-list {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contents-item {
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 1rem;
+  text-align: center;
+  color:#333;
+  padding: 1rem;
+  margin: 1rem;
+}
+.contents-item span {
+  font-weight: bold;
+  font-size:1.1rem;
+}
+@media (min-width: 600px) {
+  .contents-list {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+/* 좌측사이드 */
+.left-item:before {
+  content: "⇧";
+  font-size: 2rem;
+  color: dodgerblue;
+  margin-right: 1rem;
+}
+.left-item:nth-child(2):before{
+  content: "⇩";
+  font-size: 2rem;
+  color: crimson;
+}
+.left-item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.left-title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
