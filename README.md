@@ -9,13 +9,23 @@
   - 로그인 클릭 시 메인페이지 이동
   - 회원가입 클릭 시 회원가입 모달창 생성
 ### 미구현 내용
-  - 회원가입 시 데이터베이스에 데이터 저장
   - 로그인 시 ID/PW 비교 후 회원만 메인페이지로 이동
+  - node.js + mySQL 공부 후 구현 예정
+
+## 회원가입 페이지
+
+<img src="./images/회원가입.png" width="600px;">
+
+### 구현내용
+  - 회원가입 페이지
+  - 가입 시 데이터베이스에 계정정보 저장
+### 미구현 내용
+  - 회원가입 시 데이터베이스에 데이터 저장
   - node.js + mySQL 공부 후 구현 예정
 
 ## 메인 페이지
 
-<img src="./images/반응형1.png" width="600px;"><br>
+<img src="./images/반응형1.png" width="300px;"><br>
 <img src="./images/반응형2.png" width="600px;"><br>
 <img src="./images/반응형3.png" width="600px;">
 
