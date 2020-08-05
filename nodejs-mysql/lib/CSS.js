@@ -343,23 +343,17 @@ label[for="signup-password"] {
   }
 }
 /* 좌측사이드 */
-.left-item:before {
-  content: "⇧";
-  font-size: 2rem;
-  color: dodgerblue;
+.left-span {
+  font-size: 1.5rem;
   margin-right: 1rem;
 }
-.left-item:nth-child(2):before{
-  content: "⇩";
-  font-size: 2rem;
-  color: crimson;
+.left-div{
+  display: flex; 
+  align-items: center;
 }
 .left-item{
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 .left-title {
   margin-bottom: 1rem;
@@ -552,7 +546,56 @@ label[for="signup-password"] {
   .X-button {
     display: none;
   }
-    
+  .menu-btn{
+    color: black;
+    text-decoration: none;
+  }
+  .menu-container {
+    position: absolute;
+    top: 141px;
+    left: -100vw;
+    width: 99vw;
+    min-height: calc(100vh - 141px);
+    background-color: #fffaf0;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:2.5px solid #333;
+    border-radius: 1rem;
+  }
+  .menu-container > p{
+    margin-top:1rem;
+    font-size:2rem; 
+    font-weight: bold;
+  }
+  .menu-table{
+    margin-top: 5rem;
+    border-collapse: separate;
+  }
+  .menu-tr{
+  
+    border:0.5px solid #00498c;
+    border-radius: 1rem;
+  }
+  .menu-th{
+    height: 2rem;
+    width: 10rem;
+    border-radius: 0.3rem;
+    border: 2px solid #333;
+    color: #333;
+  }
+  .menu-th:nth-child(4){
+    width: 20rem;
+  }
+  .menu-td{
+    height: 2rem;
+    width: 10rem;
+    border-radius: 0.3rem;
+    border:0.5px solid #00498c;
+    color: #333;
+    text-align: center;
+  }
     `
   }
 }

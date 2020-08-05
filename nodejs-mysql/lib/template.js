@@ -16,9 +16,9 @@ var template = {
   <div class="web-container">
     <form class="login-container" action="/login" method="post">
       <label for="id">아이디</label>
-      <input type="text" name="id" id="id">
+      <input type="text" name="id" id="id" required>
       <label for="password">비밀번호</label>
-      <input type="password" name="password" id="password">
+      <input type="password" name="password" id="password" required>
      <input type="submit" class="submit" value ="로그인">
       <!-- <a href="/login" class="submit">로그인</a> -->
       <input type="button" class="signup" value ="회원가입">
@@ -28,9 +28,9 @@ var template = {
     <form class="signup-container" action='/signup' method='post'>
       <span>회원가입</span>
       <label for="signup-id">아이디</label>
-      <input type="text" name="id" id="signup-id">
+      <input type="text" name="id" id="signup-id" required>
       <label for="signup-password">비밀번호</label>
-      <input type="password" name="password" id="signup-password">
+      <input type="password" name="password" id="signup-password" required>
       <input type="submit" class="signup-submit" value ="가입">
     </form>
   </div>
@@ -54,7 +54,7 @@ var template = {
 </html> 
     `
   },
-  main: function(id, whole_data,Date) {
+  main: function(id, whole_data, Date, all_data, left_list) {
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -75,7 +75,7 @@ var template = {
         <!-- navi -->
         <ul class="menu">
           <li class="menu-item">
-            <a href="# "class="menu-link">☰</a>
+            <a href="#"class="menu-link menu-btn">☰</a>
           </li>
           <li class="menu-item">
             <form class="search-form">
@@ -110,13 +110,11 @@ var template = {
         <aside class="left-side-container">
           <ul class="left-side">
             <li class="left-title">최근 변경내역</li>
-            <li class="left-item">07월 20일 17000원</li>
-            <li class="left-item">06월 13일 32000원</li>
-            <li class="left-item">04월 23일 7000원</li>
+            ${left_list}
           </ul>
         </aside>
         <!-- footer -->
-        <footer class="footer">MADE BY JJongTaeng</footer>
+        <footer class="footer">MADE BY 쫑탱</footer>
       </div>
       <!-- 데이터입력 모달 -->
       <div class="income-expand-container">
@@ -148,7 +146,40 @@ var template = {
         </form>
       </div>
       <div class="plus-button"><span>+</span></div>
+
+      <div class="menu-container">
+        <p>전체기록 조회</p>
+        ${all_data}
+      </div>
       <script>
+        const left_span = document.querySelectorAll('.left-span');
+        console.log(left_span);
+        for(var i=0; i<left_span.length; i++){
+
+          if(left_span[i].id == 0) {
+            left_span[i].innerText = '⇧';
+            left_span[i].style.color= "dodgerblue";
+          }
+          else if(left_span[i].id == 1) {
+            left_span[i].innerText = '⇩';
+            left_span[i].style.color= "crimson";
+          }
+        }
+
+        var menu_btn = document.querySelector('.menu-btn');
+        var menu_container = document.querySelector('.menu-container');
+        var i = 0;
+        menu_btn.addEventListener('click',slide);
+        function slide() {
+          if(i==0) {
+            i=1;
+            menu_container.style.left = "0";
+          }
+          else{
+            i=0;
+            menu_container.style.left = "-100vw";
+          }
+        }
         var plus_btn = document.querySelector(".plus-button");
         var modal_container = document.querySelector(".income-expand-container");
         var modal_X = document.querySelector(".income-expand-cancle");
